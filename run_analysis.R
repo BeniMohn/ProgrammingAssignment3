@@ -154,17 +154,16 @@ getNewName <- function(column){
         
         # expanding Acc to acceleration and mag to Magnitude
         column <- gsub("[Aa]cc", "Acceleration", column)
-        column <- gsub("[Mm]ag", "Magnitude", column)
-        
+        if (grepl("[Mm]ag", column)) {
+                column <- paste0(column, "All")
+                column <- gsub("[Mm]ag", "", column)
+        }
         # making "mean" and "std" camel case.
         column <- gsub("mean", "Mean", column)
         column <- gsub("std", "Std", column)
         
         # Removing duplicated Body from column name
         column <- gsub("BodyBody", "Body", column)
-        
-        # Appending "All" if last letter is not X,Y or Z
-        if (!grepl("([x-zX-Z]$)", column)) column <- paste0(column, "All")
         
         # Removing any special characters. 
         column <- gsub("-|\\(|\\)", "", column)
@@ -196,16 +195,22 @@ averageData <- function(data){
 
 # Part 2
 # =======
-# Here the second parts start. These part just calls for of the functiones defined 
+# Here the second parts start. These part just calls four of the functions defined 
 # In part 1. At the end the resulting dataframe will be stored in the current working
-# directory. 
+# directory. As well intermidiate results are removed from the environment, to just end
+# up with the tidy dataset in the enivronment. 
 ######################################################################################
 
 # Calling the four functions
 complete_data <- createDataSet()
 reduced_data <- extractRows(complete_data)
+rm(complete_data)
+
 renamed_data <- renameData(reduced_data)
+rm(reduced_data)
+
 averaged_data <- averageData(renamed_data)
+rm(renamed_data)
 
 # writing the final resut. 
 write.table(averaged_data, "tidy_averages.txt", row.names = FALSE)
