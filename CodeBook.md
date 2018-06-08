@@ -136,222 +136,230 @@ This column if factor consisting 6 levels each representing one of the actions a
 This columns indicates to whom of the 30 subjects the current row belongs. The subjects are numbered
 from 1 to 30.  
 
-#### timeBodyAccelrationMeanX/timeBodyAccelrationMeanY/timeBodyAccelrationMeanZ
+##### timeBodyAccelrationMeanX/timeBodyAccelrationMeanY/timeBodyAccelrationMeanZ
 
 Those three columns come from the original columns: 
 tBodyAcc-mean()-X/tBodyAcc-mean()-Y/tBodyAcc-mean()-Z
 
-#### timeBodyAccelrationStdX/timeBodyAccelrationStdY/timeBodyAccelrationStdZ
+##### timeBodyAccelrationStdX/timeBodyAccelrationStdY/timeBodyAccelrationStdZ
 
 Those three columns come from the original columns: 
 tBodyAcc-std()-X/tBodyAcc-std()-Y/tBodyAcc-std()-Z
 
-#### timeGravityAccelrationMeanX/timeGravityAccelrationMeanY/timeGravityAccelrationMeanZ
+##### timeGravityAccelrationMeanX/timeGravityAccelrationMeanY/timeGravityAccelrationMeanZ
 
 Those three columns come from the original columns: 
 tGravityAcc-mean()-X/tGravityAcc-mean()-Y/tGravityAcc-mean()-Z
 
-#### timeGravityAccelrationStdX/timeGravityAccelrationStdY/timeGravityAccelrationStdZ
+##### timeGravityAccelrationStdX/timeGravityAccelrationStdY/timeGravityAccelrationStdZ
 
 Those three columns come from the original columns: 
 tGravityAcc-std()-X/tGravityAcc-std()-Y/tGravityAcc-std()-Z
 
-#### timeBodyAccelrationJerkMeanX/timeBodyAccelrationJerkMeanY/timeBodyAccelrationJerkMeanZ
+##### timeBodyAccelrationJerkMeanX/timeBodyAccelrationJerkMeanY/timeBodyAccelrationJerkMeanZ
 
 Those three columns come from the original columns: 
 tBodyAccJerk-mean()-X/tBodyAccJerk-mean()-Y/tBodyAccJerk-mean()-Z
 
-#### timeBodyAccelrationJerkStdX/timeBodyAccelrationJerkStdY/timeBodyAccelrationJerkStdZ
+##### timeBodyAccelrationJerkStdX/timeBodyAccelrationJerkStdY/timeBodyAccelrationJerkStdZ
 
 Those three columns come from the original columns: 
 tBodyAccJerk-std()-X/tBodyAccJerk-std()-Y/tBodyAccJerk-std()-Z
 
-#### timeBodyGyroMeanX/timeBodyGyroMeanY/timeBodyGyroMeanZ
+##### timeBodyGyroMeanX/timeBodyGyroMeanY/timeBodyGyroMeanZ
 
 Those three columns come from the original columns: 
 tBodyGyro-mean()-X/tBodyGyro-mean()-Y/tBodyGyro-mean()-Z
 
-#### timeBodyGyroStdX/timeBodyGyroStdY/timeBodyGyroStdZ
+##### timeBodyGyroStdX/timeBodyGyroStdY/timeBodyGyroStdZ
 
 Those three columns come from the original columns: 
 tBodyGyro-std()-X/tBodyGyro-std()-Y/tBodyGyro-std()-Z
 
-#### timeBodyGyroJerkMeanX/timeBodyGyroJerkMeanY/timeBodyGyroJerkMeanZ
+##### timeBodyGyroJerkMeanX/timeBodyGyroJerkMeanY/timeBodyGyroJerkMeanZ
 
 Those three columns come from the original columns: 
 tBodyGyroJerk-mean()-X/tBodyGyroJerk-mean()-Y/tBodyGyroJerk-mean()-Z
 
-#### timeBodyGyroJerkStdX/timeBodyGyroJerkStdY/timeBodyGyroJerkStdZ
+##### timeBodyGyroJerkStdX/timeBodyGyroJerkStdY/timeBodyGyroJerkStdZ
 
 Those three columns come from the original columns: 
 tBodyGyroJerk-std()-X/tBodyGyroJerk-std()-Y/tBodyGyroJerk-std()-Z
 
-#### timeBodyAcclerationMeanAll
+##### timeBodyAcclerationMeanAll
 
 This column is derived from the column: 
 tBodyAccMag-mean()
 
-#### timeBodyAcclerationStdAll
+##### timeBodyAcclerationStdAll
 
 This column is derived from the column: 
 tBodyAccMag-std()
 
-#### timeGravityAcclerationMeanAll
+##### timeGravityAcclerationMeanAll
 
 This column is derived from the column: 
 tGravityAccMag-mean()
 
-#### timeGravityAcclerationStdAll
+##### timeGravityAcclerationStdAll
 
 This column is derived from the column: 
 tGravityAccMag-std()
 
-#### timeBodyAcclerationMeanAll
+##### timeBodyAcclerationMeanAll
 
 This column is derived from the column: 
 tBodyAccMag-mean()
 
-#### timeBodyAcclerationStdAll
+##### timeBodyAcclerationStdAll
 
 This column is derived from the column: 
 tBodyAccMag-std()
 
-#### timeBodyAcclerationJerkMeanAll
+##### timeBodyAcclerationJerkMeanAll
 
 This column is derived from the column: 
 tBodyAccJerkMag-mean()
 
-#### timeBodyAcclerationJerkStdAll
+##### timeBodyAcclerationJerkStdAll
 
 This column is derived from the column: 
 tBodyAccJerkMag-std()
 
-#### timeBodyGyroMeanAll
+##### timeBodyGyroMeanAll
 
 This column is derived from the column: 
 tBodyGyroMag-mean()
 
-#### timeBodyGyroStdAll
+##### timeBodyGyroStdAll
 
 This column is derived from the column: 
 tBodyGyroMag-std()
 
-#### timeBodyGyroJerkMeanAll
+##### timeBodyGyroJerkMeanAll
 
 This column is derived from the column: 
 tBodyGyroJerkMag-mean()
 
-#### timeBodyGyroJerkStdAll
+##### timeBodyGyroJerkStdAll
 
 This column is derived from the column: 
 tBodyGyroJerkMag-std()
 
-#### fourierBodyAccelrationMeanX/fourierBodyAccelrationMeanY/fourierBodyAccelrationMeanZ
+##### fourierBodyAccelrationMeanX/fourierBodyAccelrationMeanY/fourierBodyAccelrationMeanZ
 
 Those three columns come from the original columns: 
 fBodyAcc-mean()-X/fBodyAcc-mean()-Y/fBodyAcc-mean()-Z
 
-#### fourierBodyAccelrationStdX/fourierBodyAccelrationStdY/fourierBodyAccelrationStdZ
+##### fourierBodyAccelrationStdX/fourierBodyAccelrationStdY/fourierBodyAccelrationStdZ
 
 Those three columns come from the original columns: 
 fBodyAcc-std()-X/fBodyAcc-std()-Y/fBodyAcc-std()-Z
 
-#### fourierGravityAccelrationMeanX/fourierGravityAccelrationMeanY/fourierGravityAccelrationMeanZ
+##### fourierGravityAccelrationMeanX/fourierGravityAccelrationMeanY/fourierGravityAccelrationMeanZ
 
 Those three columns come from the original columns: 
 fGravityAcc-mean()-X/fGravityAcc-mean()-Y/fGravityAcc-mean()-Z
 
-#### fourierravityAccelrationStdX/fourierGravityAccelrationStdY/fourierGravityAccelrationStdZ
+##### fourierravityAccelrationStdX/fourierGravityAccelrationStdY/fourierGravityAccelrationStdZ
 
 Those three columns come from the original columns: 
 fGravityAcc-std()-X/fGravityAcc-std()-Y/fGravityAcc-std()-Z
 
-#### fourierBodyAccelrationJerkMeanX/fourierBodyAccelrationJerkMeanY/fourierBodyAccelrationJerkMeanZ
+##### fourierBodyAccelrationJerkMeanX/fourierBodyAccelrationJerkMeanY/fourierBodyAccelrationJerkMeanZ
 
 Those three columns come from the original columns: 
 fBodyAccJerk-mean()-X/fBodyAccJerk-mean()-Y/fBodyAccJerk-mean()-Z
 
-#### fourierBodyAccelrationJerkStdX/fourierBodyAccelrationJerkStdY/fourierBodyAccelrationJerkStdZ
+##### fourierBodyAccelrationJerkStdX/fourierBodyAccelrationJerkStdY/fourierBodyAccelrationJerkStdZ
 
 Those three columns come from the original columns: 
 fBodyAccJerk-std()-X/fBodyAccJerk-std()-Y/fBodyAccJerk-std()-Z
 
-#### fourierBodyGyroMeanX/fourierBodyGyroMeanY/fourierBodyGyroMeanZ
+##### fourierBodyGyroMeanX/fourierBodyGyroMeanY/fourierBodyGyroMeanZ
 
 Those three columns come from the original columns: 
 fBodyGyro-mean()-X/fBodyGyro-mean()-Y/fBodyGyro-mean()-Z
 
-#### fourierBodyGyroStdX/fourierBodyGyroStdY/fourierBodyGyroStdZ
+##### fourierBodyGyroStdX/fourierBodyGyroStdY/fourierBodyGyroStdZ
 
 Those three columns come from the original columns: 
 fBodyGyro-std()-X/fBodyGyro-std()-Y/fBodyGyro-std()-Z
 
-#### fourierBodyGyroJerkMeanX/fourierBodyGyroJerkMeanY/fourierBodyGyroJerkMeanZ
+##### fourierBodyGyroJerkMeanX/fourierBodyGyroJerkMeanY/fourierBodyGyroJerkMeanZ
 
 Those three columns come from the original columns: 
 fBodyGyroJerk-mean()-X/fBodyGyroJerk-mean()-Y/fBodyGyroJerk-mean()-Z
 
-#### fourierBodyGyroJerkStdX/fourierBodyGyroJerkStdY/fourierBodyGyroJerkStdZ
+##### fourierBodyGyroJerkStdX/fourierBodyGyroJerkStdY/fourierBodyGyroJerkStdZ
 
 Those three columns come from the original columns: 
 fBodyGyroJerk-std()-X/fBodyGyroJerk-std()-Y/fBodyGyroJerk-std()-Z
 
-#### fourierBodyAcclerationMeanAll
+##### fourierBodyAcclerationMeanAll
 
 This column is derived from the column: 
 fBodyAccMag-mean()
 
-#### fourierBodyAcclerationStdAll
+##### fourierBodyAcclerationStdAll
 
 This column is derived from the column: 
 fBodyAccMag-std()
 
-#### fourierGravityAcclerationMeanAll
+##### fourierGravityAcclerationMeanAll
 
 This column is derived from the column: 
 fGravityAccMag-mean()
 
-#### fourierGravityAcclerationStdAll
+##### fourierGravityAcclerationStdAll
 
 This column is derived from the column: 
 fGravityAccMag-std()
 
-#### fourierBodyAcclerationMeanAll
+##### fourierBodyAcclerationMeanAll
 
 This column is derived from the column: 
 fBodyAccMag-mean()
 
-#### fourierBodyAcclerationStdAll
+##### fourierBodyAcclerationStdAll
 
 This column is derived from the column: 
 fBodyAccMag-std()
 
-#### fourierBodyAcclerationJerkMeanAll
+##### fourierBodyAcclerationJerkMeanAll
 
 This column is derived from the column: 
 fBodyBodyAccJerkMag-mean()
 
-#### fourierBodyAcclerationJerkStdAll
+##### fourierBodyAcclerationJerkStdAll
 
 This column is derived from the column: 
 fBodyBodyAccJerkMag-std()
 
-#### fourierBodyGyroMeanAll
+##### fourierBodyGyroMeanAll
 
 This column is derived from the column: 
 fBodyBodyGyroMag-mean()
 
-#### fourierBodyGyroStdAll
+##### fourierBodyGyroStdAll
 
 This column is derived from the column: 
 fBodyBodyGyroMag-std()
 
-#### fourierBodyGyroJerkMeanAll
+##### fourierBodyGyroJerkMeanAll
 
 This column is derived from the column: 
 fBodyBodyGyroJerkMag-mean()
 
-#### fourierBodyGyroJerkStdAll
+##### fourierBodyGyroJerkStdAll
 
 This column is derived from the column: 
 fBodyBodyGyroJerkMag-std()
+
+
+### Data set
+
+The final tidy data set consists of 180 rows and 68 columns. The columns are the same as the 
+ones listed above. Each rows is a unique pair of subject and activity identified by the two 
+columns "subject" and "activity". The other columns are now the average of the corresponding values
+for all observations of this pair. 

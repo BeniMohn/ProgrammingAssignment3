@@ -40,7 +40,10 @@
 # return - This word indictes the return value
 # (somestring) - After the word "return" there is the name of the output given
 # [type] - In squared brackets the type of the ouput is given
-# test - After the type there is a short text describing the output. 
+# text - After the type there is a short text describing the output. 
+# Additionally you will find the two fields
+# calls - wehre functions are listed, this function calls
+# calledBy - Listing the functions, which call this function.
 ###############################################################################
 
 read_samsung_file <- function(file){
@@ -48,6 +51,8 @@ read_samsung_file <- function(file){
         # This function reads in a specified file. 
         # param file: [str] file name and path to be read in
         # return read_data: [data.frame] The content of the specified file
+        # calls: - 
+        # callesBy: read_samsung_data, createDataSet
         ##################################################################
         
         read_data <- read.table(file = file)
@@ -63,6 +68,8 @@ read_samsung_data <- function(group, features, activitiesmap){
         # param features: [vector] The names of the columns of the read in data
         # param activitiesmap: [data.frame] The dataframe where each row represents an activity
         # return measures: [data.frame] The content of the specified folder
+        # calls: read_samsung_file
+        # calledBy: createDataSet
         #######################################################################################
         
         # Reading the three files from the folder (group)
@@ -83,6 +90,8 @@ createDataSet <- function(){
         # This function created the unioned data set. 
         # There fore all the ".txt" files requiered are read in. 
         # return complete_data: [data.frame] The entire dataset from UCI HAR Dataset
+        # calls: read_samsung_data, read_sasmung_file 
+        # calledBy: - (is directly called in part 2)
         #######################################################################################
         
         # loading all ".txt" files 
@@ -101,6 +110,8 @@ meanOrStdColumn <- function(column){
         # param column: [str] - A column name
         # return : [boolean] - TRUE - if column contains either "mean", "std", "activity" or
         #                             "subject" later two are needed since they are used in step 5
+        # calls: - 
+        # calledBy: getMask
         #######################################################################################
         
         return (grepl("mean\\(\\)|std\\(\\)|activity|subject", column))
@@ -112,6 +123,8 @@ getMask <- function(vect){
         # to the length of the input vector. 
         # param vect: [vector of strings] Vector of strings with the column names 
         # return mask: [vector of boolean] Vector with same length as input vector 
+        # calls: meanOrStdColumn
+        # calledBy: extractRows
         #######################################################################################
         
         mask <- sapply(vect, meanOrStdColumn)
@@ -125,6 +138,8 @@ extractRows <- function(data){
         # param data: [data.frame] A data frame whose rows shell be filteres
         # return : [data.frame] A data.frame only containing the rows of the input data.frame
         #                       That meet the criterea. 
+        # calls: getMask
+        # calledBy:  - (is directly called in part 2)
         #######################################################################################
         
         mask <- getMask(names(data))
@@ -143,6 +158,8 @@ getNewName <- function(column){
         #               "subject" and "activity" stay as there are, since they are created by me.
         #               Words are in camel case, meaning strating with small letters and new word
         #               inside the string starts with capital letter. (I find it most readable)
+        # calls: - 
+        # calledBy: renameData
         #########################################################################################
         
         # filtering for activity and subjuct column name. 
@@ -176,6 +193,8 @@ renameData <- function(data){
         # This function is used to rename all the column names. 
         # param data: [data.frame] Dataframe where all columns shell be renamed 
         # return data: [data.frame] Same data as input with renamed columns
+        # calls: getNewName
+        # calledBy:  - (is directly called in part 2)
         #######################################################################################
         
         names(data) <- sapply(names(data), getNewName)
@@ -188,6 +207,8 @@ averageData <- function(data){
         # param data: [data.frame] Data.frame to calculate averages from.
         # return : [data.frame] Data.frame with the averages of per acitivity and 
         #                       subject combination
+        # calls: - 
+        # calledBy:  - (is directly called in part 2)
         #######################################################################################
         
         return(aggregate(. ~ subject + activity, data=data, mean))
