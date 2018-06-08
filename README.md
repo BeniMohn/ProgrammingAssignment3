@@ -1,6 +1,6 @@
 # ReadME 
 
-This repo was created by Benjamin Mohn at the 06.06.2018. Purpose of the repo is to pass the 
+This repo was created by Benjamin Mohn at the 07.06.2018. Purpose of the repo is to pass the 
 assignment of week 4 for the Coursera Cours "Getting and Cleaning Data". 
 
 In this file a description of the repro and the files is to be found. As well it will be 
