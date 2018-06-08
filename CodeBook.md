@@ -118,14 +118,14 @@ the condition was enriched with "activity" and "subject" to get these columns as
 After this filtering the data.frame contains still 10299 rows but now only 68 columns are left. 
 Those columns have then be renamed. The basic ideas therefore where: 
 1. replace beginning "t" with "time" and beginning "f" with "fourier"
--- because the initial letter determined in which frame they are.  
+	- because the initial letter determined in which frame they are.  
 2. check for "Acc" or "Mag"
--- if "Acc" is contained in the name it is replaced with "Acceleration"
--- if "Mag" is contained, it is removed and "All" is appended to the end of the column 
+	- if "Acc" is contained in the name it is replaced with "Acceleration"
+	- if "Mag" is contained, it is removed and "All" is appended to the end of the column 
 3. "mean" or "std" are replaced with "Mean" or "Std"
 4. replace "BodyBody" with "Body"
--- couple of columns have BodyBody in their name
-5. remove all special charakters ("-","(", ")")
+	- couple of columns have BodyBody in their name
+5. remove all special charakters ( "-", "(", ")" )
 
 #### activity 
 
